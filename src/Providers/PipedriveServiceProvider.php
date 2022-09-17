@@ -3,6 +3,8 @@
 namespace Pipedrive\Providers;
 use Pipedrive\Console\Commands\PipeCommand;
 use Pipedrive\Services\PipeDriveService;
+use Illuminate\Support\Facades\Blade;
+use Pipedrive\View\Components\Integration\Index;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -36,6 +38,7 @@ class PipedriveServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/pipedrive.php' => config_path('pipedrive.php'),
         ]);
+        Blade::component('integration', Index::class);
 
         if ($this->app->runningInConsole()) {
             $this->commands([
