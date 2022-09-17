@@ -1,0 +1,24 @@
+{
+    "name": "crmbooster/pipedrive",
+    "autoload": {
+        "psr-4": {
+            "Pipedrive\\" : "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Narek Antabyan",
+            "email": "narekantabyan95@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pipedrive\\Providers\\PipedriveServiceProvider"
+            ]
+        }
+    }
+}
