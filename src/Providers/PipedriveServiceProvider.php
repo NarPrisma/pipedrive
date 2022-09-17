@@ -38,7 +38,10 @@ class PipedriveServiceProvider extends ServiceProvider
         $this->publishes([
             __DIR__.'/../config/pipedrive.php' => config_path('pipedrive.php'),
         ]);
-        Blade::component('integration', Index::class);
+        $this->loadViewComponentsAs('pipedrive', [
+            Index::class,
+
+        ]);
 
         if ($this->app->runningInConsole()) {
             $this->commands([
