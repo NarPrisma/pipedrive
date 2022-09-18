@@ -1,7 +1,6 @@
 <div>
     <div>
         <div class="relative p-5 mt-5">
-
             <div class="max-w-sm rounded overflow-hidden shadow-lg" data-tilt data-tilt-glare
                  data-tilt-max-glare="0.2" data-tilt-perspective="1000">
                 <img class="mx-auto"

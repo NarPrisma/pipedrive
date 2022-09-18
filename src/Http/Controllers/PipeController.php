@@ -11,6 +11,7 @@ use Pipedrive\Http\PipeUploader;
 
 class PipeController extends Controller
 {
+
     public function redirect(Request $request)
     {
         if ($request->has('userId')) {
