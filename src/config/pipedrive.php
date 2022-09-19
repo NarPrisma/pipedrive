@@ -7,16 +7,16 @@ return [
         'secret' => env('PIPEDRIVE_SECRET'),
         'endpoint' => env('PIPEDRIVE_ENDPOINT'),
         'oauth' => "https://oauth.pipedrive.com/oauth",
-        'redirect' => "http://saas.loc/pipedrive/callback",
+        'redirect' => env('APP_URL')."/pipedrive/callback",
     ],
 
     'pipedrive_custom_ui' => [
         'api_token' => env('PIPEDRIVE_CUSTOM_API_TOKEN'),
         'id' => env('PIPEDRIVE_CUSTOM_UI_ID'),
         'oauth' => "https://oauth.pipedrive.com/oauth",
-        'redirect' => "http://saas.loc/pipedrive/custom_ui/callback",
+        'redirect' => env('APP_URL')."/pipedrive/custom_ui/callback",
         'secret' => env('PIPEDRIVE_CUSTOM_UI_SECRET'),
-        'endpoint' =>env('PIPEDRIVE_CUSTOM_UI_ENDPOINT'),
+        'endpoint' => env('PIPEDRIVE_CUSTOM_UI_ENDPOINT'),
     ],
     
     'labels' => [
