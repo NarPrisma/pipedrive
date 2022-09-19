@@ -16,6 +16,6 @@
                 description="Pipedrive is the first CRM platform made for salespeople, by salespeople">
         </x-pipedrive>
 
-        @include('theme::integration.modal')
+        @include('pipedrive::integration.modal')
     </div>
 @endsection
