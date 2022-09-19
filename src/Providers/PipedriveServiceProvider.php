@@ -40,9 +40,6 @@ class PipedriveServiceProvider extends ServiceProvider
         ]);
         Blade::component('pipedrive', Index::class);
 
-
-
-
         if ($this->app->runningInConsole()) {
             $this->commands([
                 PipeCommand::class,
