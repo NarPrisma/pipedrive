@@ -3,7 +3,7 @@
 use Illuminate\Support\Facades\Route;
 
 /***** Pipedrive Routes *****/
-Route::group(['prefix' => 'pipedrive', 'as' => 'pipedrive.',], function () {
+Route::group(['prefix' => 'pipedrive', 'as' => 'pipedrive.','middleware' => ['web', 'auth']], function () {
     Route::view('/', 'pipedrive::integration.index')->name('index');
     Route::get('/redirect', '\Pipedrive\Http\Controllers\PipeController@redirect')->name('redirect');
     Route::get('/callback', '\Pipedrive\Http\Controllers\PipeController@init');

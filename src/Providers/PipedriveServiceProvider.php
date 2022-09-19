@@ -1,11 +1,10 @@
 <?php
 
 namespace Pipedrive\Providers;
-use Pipedrive\Console\Commands\PipeCommand;
+
 use Pipedrive\Services\PipeDriveService;
 use Illuminate\Support\Facades\Blade;
 use Pipedrive\View\Components\Integration\Index;
-
 use Illuminate\Support\ServiceProvider;
 
 class PipedriveServiceProvider extends ServiceProvider
@@ -32,20 +31,12 @@ class PipedriveServiceProvider extends ServiceProvider
         $this->loadRoutesFrom(__DIR__.'/../routes/web.php');
         $this->loadViewsFrom(__DIR__.'/../resources/views', 'pipedrive');
         $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
+        Blade::component('pipedrive', Index::class);
         $this->publishes([
             __DIR__.'/../resources/views' => resource_path('views/vendor/pipedrive'),
         ]);
         $this->publishes([
             __DIR__.'/../config/pipedrive.php' => config_path('pipedrive.php'),
         ]);
-        Blade::component('pipedrive', Index::class);
-
-        if ($this->app->runningInConsole()) {
-            $this->commands([
-                PipeCommand::class,
-
-            ]);
-        }
-
     }
 }
