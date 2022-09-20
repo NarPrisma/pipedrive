@@ -40,20 +40,28 @@ PIPEDRIVE_CUSTOM_UI_ENDPOINT =
     <img class="center" src="https://i.imgur.com/Qp4bcRA.png" height=400px"/>
 </p>
 
-For use **Custom UI** extensions in pipedrive you need to set
-**PIPEDRIVE_CUSTOM_UI_ENDPOINT**
+For use **Custom UI** extensions in pipedrive you need to set  PIPEDRIVE_CUSTOM_UI_ENDPOINT
 <br>
 _It can be the same if you use the same company domain_. 
 
-#### Config custom ui 
+#### Config custom UI 
 
 <p align="center">
     <img class="center" src="https://imgur.com/0VfOS0A.png" height=400px"/>
 </p>
- set corrent Iframe URL.
+
+####  Set current Iframe URL.
+
 <br>
-it must be your app domain before pipedrive/modal
+Go to your app’s edit page in Marketplace Manager and scroll to App extensions > Custom UI extensions > Custom panel. Click on “+ Custom panel” and fill in the following fields:
 <br>
+
+Go to your app’s edit page in Marketplace Manager and scroll to App extensions > Custom UI extensions > Custom panel. Click on “+ Custom panel” and fill in the following fields:
+
+<p align="center">
+    <img class="center" src="https://i.imgur.com/t3yrbwM.png" height=400px"/>
+</p>
+Iframe URL must end in pipedrive/modal
 
 _like picture below_
 
