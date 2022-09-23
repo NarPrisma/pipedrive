@@ -63,10 +63,12 @@ Go to your app’s edit page in Marketplace Manager and scroll to App extensions
 </p>
 Iframe URL must end in pipedrive/modal
 
+`https://you company domain-sandbox.pipedrive.com/api/v1`
+
 _like picture below_
 
 <p align="center">
-    <img class="center" src="https://i.imgur.com/a4jDzXt.png" height=400px"/>
+    <img class="center" src="https://i.imgur.com/hogIXfA.png" height=400px"/>
 </p>
 
 #### Run Migrations
